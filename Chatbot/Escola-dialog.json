@@ -1,0 +1,903 @@
+{
+  "intents": [
+    {
+      "intent": "Agradecimento",
+      "examples": [
+        {
+          "text": "Agradecido!"
+        },
+        {
+          "text": "Estou muito grato a você."
+        },
+        {
+          "text": "Fico muito agradecido!"
+        },
+        {
+          "text": "Foi um prazer!"
+        },
+        {
+          "text": "Muitíssimo obrigado!"
+        },
+        {
+          "text": "Muito obrigada pela sua ajuda."
+        },
+        {
+          "text": "Muito obrigado!"
+        },
+        {
+          "text": "Não há de quê."
+        },
+        {
+          "text": "Obrigado de verdade!"
+        },
+        {
+          "text": "Quero te agradecer por me ajudar!"
+        },
+        {
+          "text": "Quero te agradecer por sanar minhas dúvidas"
+        },
+        {
+          "text": "Valeu!"
+        }
+      ],
+      "description": "Agradecer quem utiliza o site"
+    },
+    {
+      "intent": "Boas-vindas",
+      "examples": [
+        {
+          "text": "."
+        },
+        {
+          "text": "Ajuda"
+        },
+        {
+          "text": "Alguém pode me ajudar?"
+        },
+        {
+          "text": "Boa noite"
+        },
+        {
+          "text": "Boa tarde"
+        },
+        {
+          "text": "Bom dia"
+        },
+        {
+          "text": "Consegue me ajudar?"
+        },
+        {
+          "text": "E aí"
+        },
+        {
+          "text": "Fala bot"
+        },
+        {
+          "text": "Help me"
+        },
+        {
+          "text": "Me ajude"
+        },
+        {
+          "text": "Oi"
+        },
+        {
+          "text": "Olá"
+        },
+        {
+          "text": "Olá, pode me ajudar por favor?"
+        },
+        {
+          "text": "Pode me ajudar?"
+        },
+        {
+          "text": "Preciso de ajuda"
+        },
+        {
+          "text": "Salve"
+        },
+        {
+          "text": "Tem alguém aqui?"
+        }
+      ],
+      "description": "Boas vindas aos usuários que estão por vir"
+    },
+    {
+      "intent": "Calendário-escolar",
+      "examples": [
+        {
+          "text": "Calendário Escolar"
+        },
+        {
+          "text": "Consigo saber as datas dos passeios escolares?"
+        },
+        {
+          "text": "Datas de prova para este mês"
+        },
+        {
+          "text": "É aqui que posso ver o calendário escolar do meu filho?"
+        },
+        {
+          "text": "Haverá algum passeio escolar este ano?"
+        },
+        {
+          "text": "Haverá aula nos jogos do Brasil na copa?"
+        },
+        {
+          "text": "Já decidiram as datas das provas escolares?"
+        },
+        {
+          "text": "Nos feriados terão aulas?"
+        },
+        {
+          "text": "Passeios escolares"
+        },
+        {
+          "text": "Poderia me dizer quando será o passeio da escola?"
+        },
+        {
+          "text": "Provas escolares"
+        },
+        {
+          "text": "Quando será as provas do meu filho?"
+        },
+        {
+          "text": "Quando serão as férias?"
+        },
+        {
+          "text": "Terá prova esse mês?"
+        }
+      ],
+      "description": "Será sanadas algumas dúvidas quanto ao calendário escolar"
+    },
+    {
+      "intent": "Comportamento-do-aluno",
+      "examples": [
+        {
+          "text": "Como está sendo o comportamento do meu filho na escola?"
+        },
+        {
+          "text": "Como meu afiliado está na escola?"
+        },
+        {
+          "text": "Como meu guri está indo na sala de aula?"
+        },
+        {
+          "text": "Comportamento do aluno"
+        },
+        {
+          "text": "E por aqui que posso me informar do comportamento do meu filho na sala de aula?"
+        },
+        {
+          "text": "Gostaria de saber como meu filho anda se comportando na escola"
+        },
+        {
+          "text": "Meu dependente está se aprontando?"
+        },
+        {
+          "text": "Meu filho está indo bem?"
+        },
+        {
+          "text": "Meu filho está obedecendo aos professores?"
+        },
+        {
+          "text": "Meu filho está sendo obediente?"
+        },
+        {
+          "text": "Meu menino é bagunceiro?"
+        },
+        {
+          "text": "O meu filho tem se comportado bem na escola?"
+        },
+        {
+          "text": "Por que meu filho está indo mal?"
+        }
+      ],
+      "description": "Neste tópico se comentará o comportamento do aluno, fora e dentro da sala"
+    },
+    {
+      "intent": "Disciplinas",
+      "examples": [
+        {
+          "text": "Disciplinas"
+        },
+        {
+          "text": "E por aqui que consigo ver as disciplinas que meu filho irá estudar?"
+        },
+        {
+          "text": "Gostaria de saber o que meu filho irá estudar nessa escola, poderia me dizer?"
+        },
+        {
+          "text": "Grade curricular"
+        },
+        {
+          "text": "Matérias"
+        },
+        {
+          "text": "Meu dependente terá aulas de música?"
+        },
+        {
+          "text": "Nessa escola é ensinado espanhol ou inglês?"
+        },
+        {
+          "text": "Onde que vejo quais serão as disciplinas dadas afiliado nessa escola?"
+        },
+        {
+          "text": "Os alunos terão aulas extracurriculares nessa escola?"
+        },
+        {
+          "text": "Poderia me dizer quais as disciplinas que os alunos irão estudar nessa escola?"
+        },
+        {
+          "text": "Quais as disciplinas de hoje?"
+        },
+        {
+          "text": "Quais as disciplinas que meu filho verá na escola?"
+        },
+        {
+          "text": "Qual a nota minima para as matérias?"
+        }
+      ],
+      "description": "Ver coisas relacionadas a disciplina da escola"
+    },
+    {
+      "intent": "Entre-em-contato",
+      "examples": [
+        {
+          "text": "A escola possui redes sociais?"
+        },
+        {
+          "text": "A escola tem email?"
+        },
+        {
+          "text": "Através deste atendimento consigo me comunicar diretamente com a escola?"
+        },
+        {
+          "text": "Como entro em contato com a escola?"
+        },
+        {
+          "text": "Consigo entrar em contato com algum professor?"
+        },
+        {
+          "text": "Falar com secretaria"
+        },
+        {
+          "text": "Gostaria de saber meio de contato para falar com a escola?"
+        },
+        {
+          "text": "Por um acaso, e por aqui que me comunico com a escola?"
+        },
+        {
+          "text": "Quais as formas de comunicação que a escola possui?"
+        },
+        {
+          "text": "Qual número da escola?"
+        },
+        {
+          "text": "Redes sociais da escola"
+        },
+        {
+          "text": "Telefone para contato"
+        },
+        {
+          "text": "Tem um meio de contato rápido e fácil para entrar em contato?"
+        },
+        {
+          "text": "Whatsapp da escola"
+        }
+      ],
+      "description": "Ajuda para entrar em contato com a escola"
+    },
+    {
+      "intent": "Eventos",
+      "examples": [
+        {
+          "text": "Através desta conversa consigo ver quais os próximos eventos escolares?"
+        },
+        {
+          "text": "Consigo ver a data do próximo evento escolar por aqui?"
+        },
+        {
+          "text": "E por aqui que me informo da data da festa junina?"
+        },
+        {
+          "text": "Eventos escolares"
+        },
+        {
+          "text": "Gostaria de saber se por aqui, consigo ver as datas das próximas festas escolares"
+        },
+        {
+          "text": "Já decidiram a data do próximo evento escolar?"
+        },
+        {
+          "text": "Meu filho é obrigado a ir aos eventos?"
+        },
+        {
+          "text": "Por aqui consigo ver as datas dos próximos eventos escolares?"
+        },
+        {
+          "text": "Por aqui consigo ver o calendário de eventos escolares que estão por acontecer?"
+        },
+        {
+          "text": "Qual é a data da feira de ciências?"
+        },
+        {
+          "text": "Quando será a próxima festa da escola?"
+        },
+        {
+          "text": "Terá eventos esportivos?"
+        }
+      ],
+      "description": "Tópico relacionados a eventos escolares (festa junina, páscoa, entre outros)"
+    },
+    {
+      "intent": "Material-escolar",
+      "examples": [
+        {
+          "text": "A escola doa os materiais não utilizados?"
+        },
+        {
+          "text": "A escola fornece algum material?"
+        },
+        {
+          "text": "A lista de materiais para o próximo ano está disponível?"
+        },
+        {
+          "text": "E aqui que vejo os materiais escolares que meu filho precisa?"
+        },
+        {
+          "text": "É necessário muda de roupa?"
+        },
+        {
+          "text": "Gostaria de saber se por aqui vejo o que meu filho precisa no quesito de material"
+        },
+        {
+          "text": "Os materiais costumam ser caros?"
+        },
+        {
+          "text": "Pode reutilizar algum material do ano passado?"
+        },
+        {
+          "text": "Por aqui consigo ver a lista de materiais?"
+        },
+        {
+          "text": "Precisa de comprar uniforme?"
+        },
+        {
+          "text": "Quais materiais meu dependente precisa para este ano?"
+        },
+        {
+          "text": "Quais os materiais essenciais?"
+        },
+        {
+          "text": "Quais são os materiais mais importantes?"
+        },
+        {
+          "text": "Quantas folhas A4 são necessárias?"
+        },
+        {
+          "text": "Quantos cadernos são necessários?"
+        }
+      ],
+      "description": "Tópico para falar sobre material escolar que precisa comprar "
+    },
+    {
+      "intent": "Notas",
+      "examples": [
+        {
+          "text": "Caso meu filho esteja com nota ruim, existe recuperação?"
+        },
+        {
+          "text": "E por aqui que mostra a nota dos alunos?"
+        },
+        {
+          "text": "Gostaria de sua ajuda para ver a nota do meu filho, pode me ajudar?"
+        },
+        {
+          "text": "Meu afiliado está com nota vermelha?"
+        },
+        {
+          "text": "Meu dependente pode reprovar?"
+        },
+        {
+          "text": "Meu filho estuda nessa escola, por onde vejo suas notas?"
+        },
+        {
+          "text": "Meu filho tirou alguma nota ruim?"
+        },
+        {
+          "text": "Meu guri está com notas baixas?"
+        },
+        {
+          "text": "Meu menino está indo bem?"
+        },
+        {
+          "text": "Quais as notas do meu filho?"
+        },
+        {
+          "text": "Quais são as notas mínimas?"
+        },
+        {
+          "text": "Qual a nota média?"
+        }
+      ],
+      "description": "Saber a respeito das notas do respectivo filho"
+    },
+    {
+      "intent": "Reuniões",
+      "examples": [
+        {
+          "text": "As reuniões ficam gravadas?"
+        },
+        {
+          "text": "É obrigatório ir nas reuniões?"
+        },
+        {
+          "text": "E por aqui que descubro, quando ocorrerá as próximas reuniões da escola?"
+        },
+        {
+          "text": "Meu filho estuda nessa escola, gostaria de saber quando será a próxima reunião de pais?"
+        },
+        {
+          "text": "Meu filho pode ir a reunião?"
+        },
+        {
+          "text": "Onde vejo quando será a próxima reunião da turma do meu filho?"
+        },
+        {
+          "text": "O que será falado nas reuniões?"
+        },
+        {
+          "text": "Poderia me dizer qual a data da próxima reunião de pais e mestres?"
+        },
+        {
+          "text": "Professor do meu dependente estará na reunião?"
+        },
+        {
+          "text": "Qual é o horário da reunião?"
+        },
+        {
+          "text": "Reuniões"
+        },
+        {
+          "text": "Tem alguma reunião marcada?"
+        },
+        {
+          "text": "Terá aulas nos dias de reuniões?"
+        }
+      ],
+      "description": " Neste tópico será abordado a parte de calendário de possíveis e futuras reuniões"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "datas",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Feriados",
+          "synonyms": [
+            "Carnaval",
+            "Dia da independecia",
+            "Dia das crianças",
+            "Dia dos finados",
+            "Dia dos pais",
+            "Dia dos professores",
+            "Pascoa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Ferias",
+          "synonyms": [
+            "Dezembro",
+            "Fim de ano",
+            "Junho"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Passeios",
+          "synonyms": [
+            "Beto carreiro",
+            "Hopi hari",
+            "Magic city",
+            "Museu",
+            "Pinacoteca",
+            "Play center",
+            "Zoológico"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Provas",
+          "synonyms": [
+            "Atividades",
+            "Ciências",
+            "Exercicio",
+            "História",
+            "Letivo",
+            "Matemática",
+            "Português"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "rm",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "96331",
+          "synonyms": [
+            "rm96331",
+            "Russo",
+            "Vini",
+            "Vinicius",
+            "Vinicius Almeida"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "97092",
+          "synonyms": [
+            "rm97092",
+            "Vitor",
+            "Vitor Rubim"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "97324",
+          "synonyms": [
+            "Natan",
+            "Natan Cruz",
+            "rm97324",
+            "Ruivo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "97483",
+          "synonyms": [
+            "Felipão",
+            "Felipe",
+            "Felipe Merlo",
+            "rm97483"
+          ]
+        }
+      ],
+      "fuzzy_match": false
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá. Como posso te ajudar?"
+              },
+              {
+                "text": "Olá, qual sua dúvida?"
+              },
+              {
+                "text": "Olá, bem vindo, estou a sua disposição."
+              },
+              {
+                "text": "Seja bem vindo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Boas-vindas",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_9_1663633841334",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Natan",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Aluno \"Natan\" está bagunceiro!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1663638943435",
+      "conditions": "@rm && @rm:97324",
+      "dialog_node": "node_1_1663640155579",
+      "previous_sibling": "node_6_1663640115583"
+    },
+    {
+      "type": "standard",
+      "title": "Vinicius",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Aluno \"Vinicius\" está tímido demais"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1663638943435",
+      "conditions": "@rm && @rm:96331",
+      "dialog_node": "node_2_1663640187653",
+      "previous_sibling": "node_1_1663640155579"
+    },
+    {
+      "type": "standard",
+      "title": "Felipe",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Aluno \"Felipe\" está mediano."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1663638943435",
+      "conditions": "@rm && @rm:97483",
+      "dialog_node": "node_3_1663640253612",
+      "previous_sibling": "node_2_1663640187653"
+    },
+    {
+      "type": "standard",
+      "title": "Passeios",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A escola terá os seguintes passeios:\n\nHopi Hari: acontecerá 20 de setembro;\nMagic city: será no dia 11 de junho;\nZoológico: 20 de março;\nBeto carreiro: 14 de abril;\nMuseu: 22 de agosto;\nPinacoteca: 07 de outubro;\n\n\nObservação: para cada um dos passeios será necessário a autorização do responsável e caso queira o aluno poderá levar lanche."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1663641095048",
+      "conditions": "@datas && @datas:Ferias",
+      "dialog_node": "node_4_1663641830110",
+      "previous_sibling": "node_6_1663641489907"
+    },
+    {
+      "type": "standard",
+      "title": "Vitor",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O Aluno \"Vitor Rubim\" está ótimo"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1663638943435",
+      "conditions": "@rm && @rm:97092",
+      "dialog_node": "node_6_1663640115583"
+    },
+    {
+      "type": "standard",
+      "title": "Calendário escolar",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Qual data escolar deseja saber informação (Ferias, Feriados, Passeios, Provas)?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Calendário-escolar",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1663641095048",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Ferias",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "As férias começam de julho começam 01 e termina dia 23.\n\nAs férias de dezembro começa dia 28 de novembro e termina de 15 de janeiro."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1663641095048",
+      "conditions": "@datas && @datas:Ferias",
+      "dialog_node": "node_6_1663641489907"
+    },
+    {
+      "type": "standard",
+      "title": "Comportamento",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe o RM do seu filho:"
+              },
+              {
+                "text": "Digite o RM:"
+              },
+              {
+                "text": "Qual é o RM do seu dependente?"
+              },
+              {
+                "text": "Qual o nome do seu filho?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Comportamento-do-aluno",
+      "dialog_node": "node_7_1663638943435",
+      "previous_sibling": "node_6_1663641095048"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Informe um data escolar válida!"
+              },
+              {
+                "text": "Digite uma forma escolar dentro das opções infomadas"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1663641095048",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1663641095048"
+      },
+      "conditions": "@datas ||         @datas != \"Ferias\" ||       @datas != \"Feriados\" ||      @datas != \"Passeios\" ||     @datas != \"Provas\"",
+      "dialog_node": "node_7_1663641331162",
+      "previous_sibling": "node_4_1663641830110"
+    },
+    {
+      "type": "standard",
+      "title": "Agradecimentos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Valeu por usar nosso bot ;)"
+              },
+              {
+                "text": "Tomare que eu tenha conseguido sanar suas dúvidas 👌"
+              },
+              {
+                "text": "Tenha um bom restante de dia 👍"
+              },
+              {
+                "text": "Obrigado por usar este site"
+              },
+              {
+                "text": "Obrigada de coração por usar nosso bot!"
+              },
+              {
+                "text": "Não há de quê."
+              },
+              {
+                "text": "Muito obrigado por usar este site ;)"
+              },
+              {
+                "text": "Foi um prazer!"
+              },
+              {
+                "text": "Muitíssimo obrigado por utilizar deste maravilhoso bot :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "dialog_node": "node_9_1663633841334",
+      "previous_sibling": "node_7_1663638943435"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Escola",
+  "language": "pt-br",
+  "description": "Bot para uma escola primária, voltado para os pais dos alunos"
+}
