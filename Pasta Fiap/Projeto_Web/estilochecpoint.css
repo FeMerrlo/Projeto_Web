@@ -1,0 +1,33 @@
+body{
+    font-family: sans-serif;
+    text-align: justify;
+    color: blue;
+    width: 1200px;
+    height: 1200px;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+    color: red;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+section{
+    border: 1px solid black;
+    width: 33.33%;  
+    float: left;
+
+}
+article{
+    padding: 15px;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
