@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando Form</title>
+    <style>
+        input {
+            color: red;
+            background-color: yellow;
+            align-items: center;
+            display: flex;
+            margin: 2px;
+        }
+        .IdEnviar {
+            border:solid 1px black;
+        }
+        form {
+            align-items: center;
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+        }
+        label {
+            align-items: center;
+            display: flex;
+            margin: auto;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <form method="get" action="cadastro.php">
+        <label for="IdLogin">Login:</label>
+        <input type="text" id="IdLogin" name="IdLogin"> <br>
+        <label for="IdPassoword">Senha</label>
+        <input type="password" id="IdPassoword" name="IdPassoword"><br> 
+        <label for="IdIdade">Idade</label>
+        <input type="number" id="IdIdade" name="IdIdade"><br>
+        <label for="idSexo">Sexo</label> 
+        <input type="radio"name="idSexo" id="idSexoM">Masculino <br>
+        <input type="radio" name="idSexo" id="idSexoF">Feminino <br>
+        <input type="radio" name="idSexo" id="idSexoNB">Não Binario <br> <br>
+        <label for="idProgramação">Linguagens: </label> 
+        <input type="checkbox" name="idProgramação" id="JS">JavaScript <br>
+        <input type="checkbox" name="idProgramação" id="PY">Python <br> <br>
+        <input type="submit" value="Enviar" id="IdEnviar" class="IdEnviar"> <br>    
+    </form>
+</body>
+</html>
