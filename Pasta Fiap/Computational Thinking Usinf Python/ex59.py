@@ -1,8 +1,3 @@
-#Armazenar o nome, sexo e idade de cem pessoas.
-#entradas no sentido de aceitar apenas “F” ou “M” 
-#para o sexo e valores positivos para a idade.
-#Após a digitação dos dados, exibir os dados (nome, sexo e idade)
-
 name = []
 age = []
 sex = []
@@ -21,13 +16,9 @@ for i in range (0, 2, 1):
         print("Não aceitamos opções diferentes de 'M' ou 'F'")
         sexo = input("Digite 'M' ou 'F': ")
 
-for i in range (0, 2, 1):
-    if (sexo == "F"):
+if idade > "18":
       print("Nome, Idade e Sexo das Mulheres : ")
-      print(F"{sex[i]}")
+      print(F"{age[i]}")
       print("Nomes", name)
       print("Idades", age)
       print("Sexo", sex)
-
-print("Acabou")
-
