@@ -1,0 +1,54 @@
+form {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+    flex-direction: column;
+}
+label {
+    text-align: left;
+}
+
+input {
+    height: 100%;
+    padding: 12px;
+    border-radius: 1px #ccc;
+    text-align: left;
+}
+.IdEnviar {
+    border: 12px;
+}
+li {
+    list-style-type: none;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header {
+    background-color: rgb(102, 187, 34);
+}
+section {
+    display: flex;
+    align-items: center;
+    color: black;
+    flex-direction:row
+}
+img {
+   display: flex;
+   align-items: center; 
+   
+}
+h3 {
+   font-weight: bold;
+   font-size: larger
+}
+nav {
+    display: flex;
+    align-items: center;
+    color: black;
+    flex-direction: column
+}
