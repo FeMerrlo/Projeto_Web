@@ -17,7 +17,7 @@ for i in range (0, 2, 1):
         print("Não aceitamos opções diferentes de 'M' ou 'F'")
         sexo = input("Digite 'M' ou 'F': ")
 
-if idade > "18":
+if age > "18":
       print("Nome, Idade e Sexo das Mulheres : ")
       print(F"{age[i]}")
       print("Nomes", name)
