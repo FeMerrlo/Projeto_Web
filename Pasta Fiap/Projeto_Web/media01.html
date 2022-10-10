@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+
+        article{
+            height: 100%;
+            padding: 5px;
+        }
+
+        @media screen and (max-width: 480px){
+            .bloco01, .bloco02, .bloco03, .bloco04{
+                width: 100%;
+                background-color: red;
+                align-items: center;
+                text-align: left;
+                display: inline-block;
+                
+                
+            }
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px){
+            .bloco01, .bloco02, .bloco03, .bloco04{
+                box-sizing: border-box;
+                width: 50%;
+                background-color: yellow;
+                float: left;
+                align-items: center;
+                text-align: left;
+            }
+        }
+        @media screen and (min-width: 769px) and (max-width: 1279px){
+            .bloco01, .bloco02, .bloco03{
+                float: left;
+                width: 33.33%;
+                background-color: green;
+                box-sizing: border-box;
+                align-items: center;
+                text-align: left;
+            }
+
+            .bloco04{
+                clear: both;
+                width: 100%;
+                align-items: center;
+                text-align: left;
+                display: inline-block;
+            }
+        }
+        @media screen and (min-width: 1280px) and (max-width: 1000000px){
+            .bloco01, .bloco02, .bloco03, .bloco04{
+                box-sizing: border-box;
+                width: 25%;
+                background-color: blue;
+                float: left;
+                align-items: center;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article class="bloco01">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Delegadis gente finis, bibendum egestas augue arcu ut est.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.In elementis mé pra quem é amistosis quis leo.</article>
+        <article class="bloco02">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Delegadis gente finis, bibendum egestas augue arcu ut est.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.In elementis mé pra quem é amistosis quis leo.</article>
+        <article class="bloco03">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Delegadis gente finis, bibendum egestas augue arcu ut est.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.In elementis mé pra quem é amistosis quis leo.</article>
+        <article class="bloco04">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Delegadis gente finis, bibendum egestas augue arcu ut est.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.In elementis mé pra quem é amistosis quis leo.</article>
+    </section>
+</body>
+</html>
