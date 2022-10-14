@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="intro.js"></script>
+</head>
+<body>
+    <label for="idNome">Nome: </label>
+    <input type="text" id="idNome"><br>
+
+    <label for="idIdade">Idade: </label>
+    <input type="text" id="idIdade"><br>
+
+
+    
+    <input type="button" value="Ver Nome" onclick="alert(document.getElementById('idNome').value)"><br>
+    <input type="button" value="Ver Idade" onclick="alert(document.getElementById('idIdade').value)"><br>
+    <input type="button" value="Modificar Div" onclick="PreencherNome();">
+    <div id="idDiv"></div>
+</body>
+<script>
+    document.getElementById('idDiv').value = 42;
+
+    function PreencherNome(){
+        let Nome = document.getElementById('idNome').value;
+        document.getElementById('idDiv').innerHTML = "Alexander Gobbato"
+    }
+</script>
+</html>
