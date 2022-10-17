@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div {
+            background-color: red;
+            color: white;
+         }
+    </style>
+    <script>
+        //alert("Dentro da Página");
+        function nome_funcao(pNum1, pNum2){
+            let nr1 = parseInt(pNum1);
+            let nr2 = parseInt(pNum2);
+            let resultado = "";
+            if(nr1==nr2)
+                resultado ="Número" + nr1  + "é igual ao nr" + nr2+ "!"
+            if(nr1>nr2)
+                resultado = ("Número" + nr1  + "é o maior do que o nr" + nr2+ "!");
+            else
+                resultado = ("Número" + nr2  + "é o maior do que o nr" + nr1+ "!");
+            document.getElementById("idResultado").innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <label for="txtNumero1">Numero</label>
+    <input type="text" id="txtNumero1">
+    <label for="txtNumero2">Numero</label>
+    <input type="text" id="txtNumero2">
+    <input type="button" value="Mostrar o maior" onclick="nome_funcao(
+        document.getElementById('txtNumero1').value,
+        document.getElementById('txtNumero1').value);">
+    <br>
+    <label for="txtNumero1">Numero</label>
+    <input type="text" id="txtNumero1">
+    <label for="txtNumero2">Numero</label>
+    <input type="text" id="txtNumero2">
+    <input type="button" value="Mostrar o maior" onclick="nome_funcao(
+        document.getElementById('txtNumero1').value,
+        document.getElementById('txtNumero1').value);">
+    <br>
+</body>
+<script src="script01.js"></script>
+</html>
