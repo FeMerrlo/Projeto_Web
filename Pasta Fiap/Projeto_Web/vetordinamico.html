@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var linguaguens = [];
+
+        function addColor() {
+            let txtCor = document.getElementById('idCor');
+
+            if (validaPreenchimento()) {
+                alert("Preencha o campo cor!");
+            }
+            else {
+                linguaguens.push(txtCor.value);
+                console.log(linguaguens);
+                txtCor.value = "";
+                listarLinguaguens();
+            }
+            document.getElementById('idCor').focus();
+        }
+
+        function listarLinguaguens() {
+            let valor = "";
+            for (let ind = 0; ind < linguaguens.length; ind++) {
+                valor += linguaguens[ind] + "<br/>";
+            }
+            document.getElementById('divLinguaguens').innerHTML = valor;
+        }
+
+        function validaPreenchimento() {
+            let valida = false;
+            if (document.getElementById('idCor').value == "")
+                valida = true;
+
+            return valida;
+        }
+
+        function delColor(){
+            let txtCor = document.getElementById('idCor');
+            for (let ind = 0; ind < linguaguens.length; ind++) {
+                if(txtCor.value)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <label for="idCor">Cor:</label>
+    <input type="text" id="idCor" size="25px"></br>
+    <button id="btnAdicionarCor" onclick="addColor()">Add Color</button>
+    <div id="divLinguaguens"></div>
+
+    <label for="idCor">Remover Cor:</label>
+    <input type="text" id="idRemoverCor" size="25px"></br>
+    <button id="btnRemoverCor" onclick="delColor()">Del Color</button>
+</body>
+
+</html>
