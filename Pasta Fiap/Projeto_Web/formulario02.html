@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        form {
+            margin: auto;
+            width: 50%;
+        }
+
+        input[type=text] {
+            padding: 12px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #passwordconf,
+        #password {
+            -webkit-text-security: square;
+        }
+
+        #btnGravar {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 12px;
+        }
+
+        .rotulos {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get" action="/cadastrar">
+        <label for="cpf" class="rotulos">CPF:</label>
+        <input type="text" id="cpf" onfocus="retirarFormatacao(this);" onblur="formatarCampo(this);" maxlength="14"><br>
+        <label for="login" class="rotulos">Login:</label>
+        <input type="text" id="login"><br>
+        <label for="password" class="rotulos">Senha:</label>
+        <input type="text" id="password"><br>
+        <label for="passwordconf" class="rotulos">Repetir Senha:</label>
+        <input type="text" id="passwordconf"><br>
+        <button id="btnGravar" type="button" onclick="enviar();">Gravar</button>
+        <div id="aviso"></div>
+    </form>
+</body>
+<script>
+    function enviar() {
+        let cpf = document.getElementById('cpf');
+        let login = document.getElementById('login');
+        let senha = document.getElementById('password');
+        let senhaConf = document.getElementById('passwordconf');
+        let aviso = document.getElementById('aviso');
+
+
+        if (cpf.value.length == 0) {
+            aviso.innerHTML = "O preenchimento do campo CPF é obrigatório!";
+            cpf.focus();
+        } else if (login.value.length == 0) {
+            aviso.innerHTML = "O preenchimento do campo LOGIN é obrigatório!";
+            login.focus();
+        } else if (senha.value.length == 0) {
+            aviso.innerHTML = "O preenchimento do campo SENHA é obrigatório!";
+            senha.focus();
+        } else if (senhaConf.value.length == 0) {
+            aviso.innerHTML = "O preenchimento do campo CONFIRMAÇÃO SENHA é obrigatório!";
+            senhaConf.focus();
+        }else if (senha.value != senhaConf.value) {
+            aviso.innerHTML = "Senhas não conferem, digitar a mesma senha!";
+            senha.focus();
+        }else{
+            aviso.innerHTML = "";
+        }
+    }
+
+    function formatarCampo(campoTexto) {
+        if (campoTexto.value.length <= 11) {
+            campoTexto.value = mascaraCpf(campoTexto.value);
+        } else {
+            campoTexto.value = mascaraCnpj(campoTexto.value);
+        }
+    }
+    function retirarFormatacao(campoTexto) {
+        campoTexto.value = campoTexto.value.replace(/(\.|\/|\-)/g, "");
+    }
+    function mascaraCpf(valor) {
+        return valor.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, "\$1.\$2.\$3\-\$4");
+    }
+    function mascaraCnpj(valor) {
+        return valor.replace(/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/g, "\$1.\$2.\$3\/\$4\-\$5");
+    }
+</script>
+
+</html>
