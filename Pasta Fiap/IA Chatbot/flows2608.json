@@ -1,0 +1,137 @@
+[
+    {
+        "id": "3d95ae509fa63a2d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2b67a21d22c512de",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "64043d5d20abb7be",
+        "type": "reddit-credentials",
+        "username": "rm97483@fiap.com.br",
+        "user_agent": "noderef-tes",
+        "auth_type": "username_password",
+        "name": "BotBuscaReddit"
+    },
+    {
+        "id": "b4e2baec08210736",
+        "type": "natural-language-understanding",
+        "z": "3d95ae509fa63a2d",
+        "name": "",
+        "categories": false,
+        "limitcategories": "5",
+        "classifications": false,
+        "classifications-model": "8",
+        "concepts": false,
+        "maxconcepts": "8",
+        "doc-emotion": false,
+        "doc-emotion-target": "",
+        "doc-sentiment": false,
+        "doc-sentiment-target": "",
+        "entity": false,
+        "entity-emotion": true,
+        "entity-sentiment": true,
+        "maxentities": "50",
+        "keyword": false,
+        "keyword-emotion": false,
+        "keyword-sentiment": false,
+        "maxkeywords": "50",
+        "metadata": false,
+        "relation": false,
+        "semantic": true,
+        "semantic-entities": false,
+        "semantic-keywords": false,
+        "maxsemantics": "50",
+        "limittextcharacters": "0",
+        "syntax": false,
+        "syntax-sentences": false,
+        "syntax-tokens-lemma": false,
+        "syntax-tokens-pos": false,
+        "service-endpoint": "https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/93d0efbb-82d3-4855-a21b-f1bf0944762b",
+        "x": 500,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8089c1b3a43d65a0",
+        "type": "debug",
+        "z": "3d95ae509fa63a2d",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "features",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9089c2a34d6fd10e",
+        "type": "inject",
+        "z": "3d95ae509fa63a2d",
+        "name": "nba",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "nba",
+        "payloadType": "str",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "dc1c4ee7d3c51154"
+            ]
+        ]
+    },
+    {
+        "id": "dc1c4ee7d3c51154",
+        "type": "get",
+        "z": "3d95ae509fa63a2d",
+        "name": "",
+        "reddit": "64043d5d20abb7be",
+        "content_type": "submission",
+        "submission_source": "subreddit",
+        "comment_source": "subreddit",
+        "pm_source": "inbox",
+        "content_source": "saved",
+        "subreddit": "",
+        "user": "",
+        "limit": "",
+        "sort": "hot",
+        "time": "hour",
+        "fetch_all": "false",
+        "submission": "",
+        "depth": "",
+        "content_id": "",
+        "x": 320,
+        "y": 320,
+        "wires": [
+            [
+                "8089c1b3a43d65a0"
+            ]
+        ]
+    }
+]
