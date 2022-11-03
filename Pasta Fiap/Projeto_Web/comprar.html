@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/cartao" method="post">
+        <label for="idPlano"></label>
+        <select name="" id="idPlano">
+            <option value="b">Basico</option>
+            <option value="p">Profissional</option>
+            <option value="pl">Plus</option>
+        </select>
+        <br/><br/>
+        <label for="idNome">Nome</label>
+        <input type="text" id="idNome" name="idNome">
+        <br/><br/>
+        <label for="idSobreNome">Sobrenome</label>
+        <input type="text" id="idSobreNome" name="idSobreNome">
+        <br/><br/>
+        <label for="idCartao">CC/label>
+        <input type="text" id="idCartao" name="idCartao" onblur="mascaraCartao(this)" onfocus="retirarFormatacao">
+        <br/><br/>
+        <button id="btnGravarPlano" type="submit">Gravar Plano</button>
+    </form>
+</body>
+<script>
+    function mascaraCartao(campoTexto){
+    campoTexto.value = campoTexto.value.replace(/(\d{4})(\d{4})(\d{4})(\d{4})/g, "\$1.\$2.\$3.\$4")
+    }
+
+    function retirarFormatacao(campoTexto) {
+        campoTexto.value = campoTexto.value.replace(/(\.|\/)/g,"")
+    }
+
+    function gravar(){
+        let Nome = document.getElementById('idNome');
+        let Sobrenome = document.getElementById('idSbrenome');
+        let cartao = document.getElementById('idCartão');
+        let envio = false;
+        if(Nome.value.length==0){
+        }else if(Sobrenome.length==0){
+        }else if(cartao.length==0){
+        }else{
+            envio = true;
+        }
+
+        if(envio)
+           return cac;
+    }         
+</script>
+</html>
