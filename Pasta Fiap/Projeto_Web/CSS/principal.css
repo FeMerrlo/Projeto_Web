@@ -1,0 +1,9 @@
+header {
+    display: flex;
+    width: 20%;
+    height: 100%;
+}
+.alinhaheader {
+    justify-content: space-around;
+    display: inline-flex;
+}
