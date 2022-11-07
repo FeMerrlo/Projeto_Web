@@ -1,9 +1,13 @@
 header {
     display: flex;
-    width: 20%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 .alinhaheader {
     justify-content: space-around;
     display: inline-flex;
+}
+#icon {
+    justify-content: center;
+
 }
