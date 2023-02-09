@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente</title>
+    <style>
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Cliente</h1>
+      <form id="form-cliente">
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="email" name="email" placeholder="Endereço de e-mail" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <input type="submit" value="Cadastrar">
+      </form>
+    </div>
+
+    <script>
+      const form = document.querySelector("#form-cliente");
+
+      form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nome = form.nome.value;
+        const email = form.email.value;
+        const senha = form.senha.value;
+
+        console.log(nome, email, senha);
+
+        // Aqui você pode enviar os dados para o seu servidor ou fazer qualquer outra ação
+      });
+    </script>
+  </body>
+</html>
