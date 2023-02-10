@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <style>
+              form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: auto   ;
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+      
+      label,
+      input[type="submit"],
+      textarea {
+        width: 100%;
+        padding: auto   ;
+        margin-bottom: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ccc;
+      }
+      
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"] {
+        background-color: #fff;
+      }
+      
+      textarea {
+        background-color: #fff;
+        height: 150px;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tela de Login</h1>
+      <form>
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="Nome" required>
+        
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="Senha" required>
+        
+        <input type="submit" value="Enviar">
+      </form>
+      <p class="error">Senha inválida</p>
+    </div>
+    
+    <script>
+      const form = document.querySelector("form");
+      const error = document.querySelector(".error");
+      
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        
+        const username = document.querySelector("#username").value;
+        const password = document.querySelector("#password").value;
+        
+        if (password !== "12345") {
+          error.style.display = "block";
+        } else {
+                var nome = document.getElementById("nome").value;
+            var telefone = document.getElementById("telefone").value;
+            var email = document.getElementById("email").value;
+            if (nome && telefone && email) {
+            alert(nome + " Entraremos em contato pelo " + telefone + " e " + email + " obrigado pela preferência");
+            }
+            // Autenticação bem-sucedida
+        };
+        const nome = form.elements.nome.value;
+        const telefone = form.elements.telefone.value;
+        const email = form.elements.email.value;
+        const mensagem = `${nome} Entraremos em contato pelo ${telefone} e ${email} obrigado pela preferência.`;
+        alert(mensagem);
+        
+      });
+    </script>
+  </body>
+</html>
