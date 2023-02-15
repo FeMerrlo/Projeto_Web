@@ -19,4 +19,3 @@ resultado = converter(valor_reais, moeda_destino.upper())
 
 if resultado is not None:
     print(f"{valor_reais:.2f} BRL equivale a {resultado:.2f} {moeda_destino.upper()}")
-c
