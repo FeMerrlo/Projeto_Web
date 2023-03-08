@@ -1,22 +1,26 @@
-clientes=[]
-emails = {}
+clientes = []
+contas_bancarias = set()
 
-print('Cadastro de Clientes')
-
-while(True):
-    print('1 - Incluir')
-    print('2 - Atualizar')
-    print('3 - Excluir')
-    print('4 - Exibir')
-    print('5 - Incluir')
-    opcao = int(input('Digite a opção escolhida: '))
+while True:
+    nome = input("Digite o nome do cliente (ou 'sair' para encerrar): ")
+    if nome == "sair":
+        break
+    email = input("Digite o email do cliente: ")
+    idade = int(input("Digite a idade do cliente: "))
+    clientes.append((nome, email, idade))
     
-    if (opcao == 1):
-        nome = input('Digite o seu nome: ')
-        email = input('Digite o seu email: ')
-        
-        if (email in emails):
-            print('Esse email já faz parte de outro cadastro. Escoha outro')
-            email = input('Digite o seu email: ')
-        
-        possuiConta = input('Possui conta bancária ? S/N')
+    tem_conta = input("O cliente possui conta bancária? (sim/não) ")
+    if tem_conta == "sim":
+        agencia = input("Digite a agência bancária: ")
+        numero = input("Digite o número da conta: ")
+        saldo = float(input("Digite o saldo da conta: "))
+        contas_bancarias.add((agencia, numero, saldo, nome))
+
+print("Clientes cadastrados:")
+for nome, email, idade in clientes:
+    print(f"Nome: {nome}, Email: {email}, Idade: {idade}")
+    for agencia, numero, saldo, titular in contas_bancarias:
+        if titular == nome:
+            print(f"Conta bancária: Agência {agencia}, Número {numero}, Saldo R$ {saldo}")
+
+
