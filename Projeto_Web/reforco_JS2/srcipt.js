@@ -16,3 +16,4 @@ document.write("O nome é: ", msg)
 if(10 > 8){
     document.write("O valor 10 é maior que 7")
 }
+
