@@ -1,0 +1,7 @@
+Felipe
+bala,5,6.50
+bola,1,70.00
+-----
+Natan
+Pistola,3,100.00
+-----
