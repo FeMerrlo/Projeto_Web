@@ -1,0 +1,14 @@
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\bin\Debug\net6.0\FiapHelloWord.exe
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\bin\Debug\net6.0\FiapHelloWord.deps.json
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\bin\Debug\net6.0\FiapHelloWord.runtimeconfig.json
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\bin\Debug\net6.0\FiapHelloWord.dll
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\bin\Debug\net6.0\FiapHelloWord.pdb
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\FiapHelloWord.GeneratedMSBuildEditorConfig.editorconfig
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\FiapHelloWord.AssemblyInfoInputs.cache
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\FiapHelloWord.AssemblyInfo.cs
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\FiapHelloWord.csproj.CoreCompileInputs.cache
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\FiapHelloWord.dll
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\refint\FiapHelloWord.dll
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\FiapHelloWord.pdb
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\FiapHelloWord.genruntimeconfig.cache
+C:\Workspace\C#\FiapHelloWord\FiapHelloWord\obj\Debug\net6.0\ref\FiapHelloWord.dll
